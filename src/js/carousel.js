@@ -1,21 +1,8 @@
-$(".slider").slick({
+$(".autoplay").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
   autoplay: true,
-  arrows: true,
+  infinity: true,
   dots: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        dots: false,
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        dots: false,
-        slidesToShow: 1,
-      },
-    },
-  ],
+  autoplaySpeed: 2000,
 });

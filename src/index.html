@@ -14,11 +14,33 @@
     <!-- CSS -->
     <link href="/src/dist/output.css" rel="stylesheet" />
     <!-- Slick JS -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Agencia Ascensaodev</title>
   </head>
   <body class="bg-primary">
@@ -222,67 +244,109 @@
       </div>
 
       <!-- Portifolio -->
-      <div class="contanier mx-auto mt-20" id="casos">
-        <div class="flex flex-col items-center">
-          <p class="text-port font-bold">Portifolio</p>
-          <h2 class="text-white text-4xl font-bold mb-10">
-            Nossos Grandes Trabalhos
-          </h2>
-        </div>
-        <div
-          class="flex justify-center items-center gap-20 text-port font-bold px-4"
-        >
-          <a href="#" class="py-4 px-10 border-2 border-port rounded-full"
-            >Website Optimization</a
+      <div class="flex items-center justify-center mt-20 flex-col">
+        <p class="text-port font-bold">Portifolio</p>
+        <h2 class="font-bold text-4xl text-white">Nossos melhores trabalhos</h2>
+
+        <div class="flex gap-8 items-center text-port font-bold mt-10">
+          <a href="#" class="border-2 border-port py-3 px-5 rounded-full"
+            >Otimização de sites</a
           >
-          <a href="#" class="text-port font-bold">Website Redesign</a>
-          <a href="#" class="text-port font-bold">Search Engine Optimization</a>
+          <a href="#" class="">Redesign</a>
+          <a href="#" class="">SEO</a>
         </div>
 
-        <div class="bg-verde w-full py-10 mt-10">
-          <div class="flex flex-col items-center">
-            <div
-              class="slider flex flex-wrap justify-center items-center gap-5 mb-16"
-            >
-              <div>
-                <img src="/src/img/item-1.png" alt="imagem 1" />
-                <p class="w-96 mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                  fuga nobis earum quos rem temporibus veritatis fugiat
-                  distinctio doloribus nostrum veniam odio consequatur molestias
-                  possimus accusamus blanditiis, amet obcaecati doloremque!
-                </p>
-              </div>
-              <div>
-                <img src="/src/img/item-2.png" alt="imagem 1" />
-                <p class="w-96 mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                  fuga nobis earum quos rem temporibus veritatis fugiat
-                  distinctio doloribus nostrum veniam odio consequatur molestias
-                  possimus accusamus blanditiis, amet obcaecati doloremque!
-                </p>
-              </div>
-              <div>
-                <img src="/src/img/item-3.png" alt="imagem 1" />
-                <p class="w-96 mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                  fuga nobis earum quos rem temporibus veritatis fugiat
-                  distinctio doloribus nostrum veniam odio consequatur molestias
-                  possimus accusamus blanditiis, amet obcaecati doloremque!
-                </p>
-              </div>
-            </div>
-            <div>
+        <div
+          class="bg-verde w-full mt-10 flex justify-center items-center p-10"
+        >
+          <div class="flex max-w-7xl autoplay px-5">
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
               <a
                 href="#"
-                class="bg-primary shadow-lg shadow-primary text-verde font-bold px-10 py-5 rounded-full"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
+                >Veja mais</a
+              >
+            </div>
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
+              <a
+                href="#"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
+                >Veja mais</a
+              >
+            </div>
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
+              <a
+                href="#"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
+                >Veja mais</a
+              >
+            </div>
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
+              <a
+                href="#"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
+                >Veja mais</a
+              >
+            </div>
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
+              <a
+                href="#"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
+                >Veja mais</a
+              >
+            </div>
+            <div class="bg-white mr-2 ml-2 rounded-xl p-5">
+              <img src="./img/item-1.png" alt="" />
+              <p class="mt-5 mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                pariatur adipisci nesciunt nulla molestiae corporis architecto
+                nobis eos illum. Ea laudantium dolorem sequi asperiores.
+                Consequuntur tempora temporibus doloribus. Recusandae, ratione.
+              </p>
+              <a
+                href="#"
+                class="bg-port px-5 py-2 rounded-lg font-bold text-white"
                 >Veja mais</a
               >
             </div>
           </div>
         </div>
       </div>
-
       <!-- Avaliações -->
       <div class="container mx-auto mt-20">
         <div class="flex flex-col items-center justify-center">
@@ -306,12 +370,14 @@
       </div>
 
       <!-- Blog -->
-      <div class="container mx-auto mt-20">
+      <div class="container mx-auto mt-20 px-4">
         <h2 class="text-center text-white font-bold text-4xl mb-10">
           Blog Ascensaodev
         </h2>
-        <div class="flex items-center">
-          <div class="w-3/4 px-20">
+        <div
+          class="flex items-center flex-wrap flex-col md:flex-row md:flex-nowrap mx-auto"
+        >
+          <div class="md:w-3/4 md:px-20">
             <p class="text-port mb-5">Novos artigos</p>
             <h2 class="text-white font-bold text-3xl mb-5">Ascensaodev Blog</h2>
             <p class="text-gray-500 mb-10">
@@ -326,8 +392,8 @@
               >Veja todos</a
             >
           </div>
-          <div class="flex gap-5">
-            <div class="bg-white w-96 py-10 px-8 rounded-xl">
+          <div class="flex flex-col md:flex-row mt-14 gap-5">
+            <div class="bg-white md:w-96 py-10 px-8 rounded-xl">
               <h2 class="font-medium text-2xl mb-5">
                 Por quê trabalhar conosco?
               </h2>
@@ -341,7 +407,7 @@
                 >Leia mais <i class="fa-solid fa-arrow-right"></i
               ></a>
             </div>
-            <div class="bg-white w-96 py-10 px-8 rounded-xl">
+            <div class="bg-white md:w-96 py-10 px-8 rounded-xl">
               <h2 class="font-medium text-2xl mb-5">Sites com alto</h2>
               <p class="text-gray-500 mb-5">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
